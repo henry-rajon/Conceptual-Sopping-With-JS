@@ -50,7 +50,7 @@
                         <h2 class="card-title">Coffee JS</h2>
                         <p>Price: $<span>108</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="productsAdd(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                         <h2 class="card-title">Heart JS</h2>
                         <p>Price: $<span>113</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="productsAdd(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                         <h2 class="card-title">Panda JS</h2>
                         <p>Price: $<span>112</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="productsAdd(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <h2 class="card-title">Umbrella JS</h2>
                         <p>Price: $<span>105</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="productsAdd(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                         <h2 class="card-title">Vue JS</h2>
                         <p>Price: $<span>125</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary" onclick="productsAdd(this)">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -102,11 +102,11 @@
             <!-- ... -->
             <div>
                 <h2 class="text-4xl font-medium text-center">Total added Products 
-                    <span class="text-indigo-500">0</span>
+                    <span class="text-indigo-500" id="product-added-number">0</span>
                 </h2>
 
-                <div class="overflow-x-auto mt-5">
-                    <table class="table w-full">
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
                         <!-- head -->
                         <thead>
                             <tr>
@@ -115,7 +115,8 @@
                                 <th class="text-base">PRICE</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="table-body">
+                            
                         </tbody>
                     </table>
                 </div>
@@ -123,5 +124,8 @@
         </div>
     </section>
     <!-- Products Part End -->
+
+    <!-- JS Link -->
+    <script src="js/app.js"></script>
 </body>
 </html>
